@@ -1,0 +1,16 @@
+{
+  "name": "fixmyscan",
+  "version": "1.0.0",
+  "description": "Turn scanned books (PDF or DjVu, up to 1,000 pages) into clean, searchable PDFs for Kindle and e-readers.",
+  "author": {
+    "name": "FixMyScan",
+    "email": "support@fixmyscan.com",
+    "url": "https://fixmyscan.com"
+  },
+  "homepage": "https://fixmyscan.com/ai",
+  "repository": "https://github.com/FixMyScan/fixmyscan-mcp",
+  "license": "MIT",
+  "keywords": ["scan", "pdf", "ocr", "kindle", "e-reader", "djvu"],
+  "mcpServers": "./mcp.json",
+  "skills": "./skills/"
+}
