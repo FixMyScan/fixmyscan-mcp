@@ -1,7 +1,8 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fixmyscan",
   "version": "1.0.0",
-  "description": "Turn scanned books (PDF or DjVu, up to 1,000 pages) into clean, searchable PDFs for Kindle and e-readers.",
+  "description": "Turn scanned books (PDF or DjVu, up to 1,000 pages) into clean, searchable PDFs for Kindle and e-readers through FixMyScan's hosted MCP server, with OAuth sign-in and no API key.",
   "author": {
     "name": "FixMyScan",
     "email": "support@fixmyscan.com",
@@ -10,7 +11,12 @@
   "homepage": "https://fixmyscan.com/ai",
   "repository": "https://github.com/FixMyScan/fixmyscan-mcp",
   "license": "MIT",
-  "keywords": ["scan", "pdf", "ocr", "kindle", "e-reader", "djvu"],
-  "mcpServers": "./mcp.json",
-  "skills": "./skills/"
+  "keywords": ["mcp", "pdf", "ocr", "kindle", "e-reader", "scanned-books"],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "fixmyscan": { "trust": "untrusted" }
+      }
+    }
+  }
 }
